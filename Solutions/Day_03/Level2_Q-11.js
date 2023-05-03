@@ -10,4 +10,4 @@ let lastName = prompt("Enter your last name")
 
 firstName.length > lastName.length ? alert(`Your first name, ${ firstName } is longer than your family name, ${ lastName }`)
 :(firstName.length < lastName.length ? alert(`Your first name, ${ firstName } is shorter than your family name, ${ lastName }`) 
-:alert(`Your first name, ${ firstName } is equal in length to your family name, ${ lastName }`)
+:alert(`Your first name, ${ firstName } is equal in length to your family name, ${ lastName }`))
