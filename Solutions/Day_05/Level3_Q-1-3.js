@@ -201,7 +201,10 @@ const countries = [
   ]
 
 const length = countries.length
-let middle
+let middle, firstHalf = [], secondHalf = []
+
+let firstTen = countries.slice(0, 10)
+console.log(`First ten countries are ${firstTen}`)
 
 if ( length % 2 === 0){
     let mid = length / 2
@@ -211,6 +214,15 @@ if ( length % 2 === 0){
     console.log(`Middle country is ${countries[ mid ]}`)
 }
 
+if ( length % 2 === 0){
+    let mid = length / 2
+    firstHalf = countries.slice(0, mid )
+    secondHalf = countries.slice( mid )
+}else{
+    let mid = parseInt(length / 2)
+    firstHalf = countries.slice(0, mid )
+    secondHalf = countries.slice( mid )
+}
 
-let firstTen = countries.slice(0, 10)
-console.log(firstTen)
+//console.log(`First half is ${firstHalf}`)
+//console.log(`Second half is ${secondHalf}`)
