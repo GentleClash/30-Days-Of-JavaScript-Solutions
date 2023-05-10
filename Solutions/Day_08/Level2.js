@@ -76,7 +76,7 @@ for (const user in users){
     if( users[user].points >= 50){
         point+=1
     }
-    if( users[user][skill].includes('MongoDB') && users[user][skill].includes('Express') && users[user][skill].includes('React')  && users[user][skill].includes('Node')){
+    if( users[user].skills.includes('MongoDB') && users[user].skills.includes('Express') && users[user].skills.includes('React')  && users[user].skills.includes('Node')){
         mern.push(user)
     }
 }
